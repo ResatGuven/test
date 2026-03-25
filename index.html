@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Warmhaus Servis</title>
-    
     <link rel="manifest" href="manifest.json">
-    
-    <link rel="apple-touch-icon" href="logoalt.png?v=999">
+    <link rel="apple-touch-icon" href="logoalt.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Warmhaus">
@@ -18,6 +16,12 @@
     </style>
 </head>
 <body>
-    <iframe src="https://serviswarmhaus.streamlit.app/?embed=true"></iframe>
+    <iframe 
+        id="app-frame" 
+        src="https://serviswarmhaus.streamlit.app/?embed=true" 
+        allow="tel; camera; geolocation; clipboard-read; clipboard-write"
+        sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+        style="width:100%; height:100%;">
+    </iframe>
 </body>
 </html>
